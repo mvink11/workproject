@@ -205,6 +205,10 @@ footer{
   height: 5rem;
 }
 
+.footer-mobile{
+  display: none;
+}
+
 nav{
   margin-top: 2rem;
   display: flex;
@@ -234,4 +238,95 @@ nav a:hover {
 
 .copyright{
   margin-top: 4rem;
+}
+
+/* Media Queries */
+
+/* Mobile */
+
+@media only screen and (max-width: 480px){
+  header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .head-logo img{
+    width: 100%;
+  }
+
+  .dropdown{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .dropdown-content a:active {
+      background-color: #ddd;
+  }
+
+  .dropdown:active .dropdown-content {
+      display: block;
+  }
+
+  .main-container{
+    margin: 0 auto;
+  }
+
+  .jumbotron{
+    background-image: none;
+  }
+
+  .jumbotron a:active, .agents:active .menubtn,
+  .policyholders:active .menubtn {
+      background-color: red;
+  }
+
+  .agents,
+  .policyholders{
+    width: 40%;
+    height: 6rem;
+  }
+
+    .menu-drop a:active {
+      background-color: #ddd;
+  }
+
+  .agents:active .menu-drop,
+  .policyholders:active .menu-drop {
+      display: block;
+  }
+
+  .advertising{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+    /*Footer section*/
+  footer {
+    width: 100%;
+  }
+
+  .footer-top,
+  .footer-bottom{
+    display: none;
+  }
+
+  .footer-mobile{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-mobile-top,
+  .footer-mobile-middle,
+  .footer-mobile-bottom{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
 }
