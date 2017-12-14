@@ -146,6 +146,31 @@ header a:hover, .dropdown:hover .dropbtn {
   border-radius: 25%;
 }
 
+/*Services & More Sections*/
+
+.jumbo{
+  height: 700px;
+}
+
+.agent-nav{
+  display: flex;
+  width: 25%;
+  border: 1px solid red;
+  flex-direction: column;
+}
+
+.services-drop{
+  display: flex;
+  flex-direction: column;
+}
+
+.services-drop a{
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #333;
+}
+
 /*Adversising Section*/
 
 .advertising{
